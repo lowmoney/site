@@ -87,9 +87,11 @@ const fashion = () => (
             </div>
             {}
             <div id='chart'>
+            <canvas id="myChart"></canvas>
             </div>
 
         </div>
+
     </div>
 )
 

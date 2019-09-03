@@ -1,4 +1,5 @@
-import ApexCharts from 'apexcharts'
+//import ApexCharts from 'apexcharts'
+var Chart = require('chart.js');
 const fetch = require('isomorphic-fetch')
 
 let rates = []
@@ -434,24 +435,24 @@ export function historicalData() {
         }
     })
 
-    var options = {
-        chart: {
-            type: 'line'
-        },
-        series: [{
-            name: 'curr',
-            data: [historicalRates[0],historicalRates[1],historicalRates[2],historicalRates[3],historicalRates[4],historicalRates[5]]
-        }],
-        xaxis: {
-            categories: ['Jan','Feb','Mar','Apr','May','Jun']
-        }
-    }
-    
-    var chart = new ApexCharts(
-        document.querySelector("#chart"),
-        options
-    )
-    
-    chart.render()
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+        datasets: [{
+            label: 'Currency Value',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [historicalRates[0], historicalRates[1], historicalRates[2], historicalRates[3], historicalRates[4], historicalRates[5], historicalRates[6]]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
     console.log(historicalRates)
 }
