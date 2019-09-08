@@ -1,0 +1,21 @@
+.topnav {
+    background: white;
+}
+
+.topnav #myLinks {
+    display: none;
+    background: grey;
+    clear: both;
+}
+
+.topnav #myLinks a {
+    text-align: right;
+}
+
+.topnav #icon {
+    float: right;
+    padding: 20px;
+    padding-left: 130px;
+    background: white;
+    clear: both;
+}

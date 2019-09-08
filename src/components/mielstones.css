@@ -1,0 +1,68 @@
+#bodyWrapper {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#chickfilalogo {
+    grid-column: 1/2;
+    grid-row: 1;
+    z-index: 1;
+}
+
+#navbar {
+    grid-column: 4/6;
+    grid-row: 1;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+
+#bannerImg {
+    grid-column: 1/6;
+    grid-row: 1/6;
+    z-index: 0;
+}
+
+#info {
+    grid-column: 1/6;
+    grid-row: 5;
+}
+
+#profits {
+    grid-column: 1/6;
+    grid-row: 6;
+}
+
+#profitInfo {
+    grid-row: 7;
+}
+
+#footTraffic {
+    grid-column: 1/3;
+    grid-row: 8;
+}
+
+#footTrafficInfo {
+    grid-column: 3/6;
+    grid-row: 8;
+}
+
+#image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#footer {
+    grid-column: 1/6;
+    grid-row: 11;
+    background: grey;
+}
+
+#footer > p {
+    text-align: center;
+    color: white;
+}

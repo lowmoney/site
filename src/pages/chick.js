@@ -1,5 +1,7 @@
 import React from "react"
 import "../components/test.css"
+import Navbar from "../components/Navbar.js"
+
 
 const landingpage = () => (
     <div>
@@ -15,7 +17,7 @@ const landingpage = () => (
             </div>
 
             <div id="navbar">
-                
+                <Navbar></Navbar>
             </div>
 
             <div id="bannerImg">
