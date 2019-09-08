@@ -12,7 +12,7 @@ const milestones = () => (
 
         <div id="bodyWrapper">
             <div id="bannerImg">
-                <img id="image" src={require("../images/diversityimg.jpg")}></img>
+                {/* <img id="image" src={require("../images/diversityimg.jpg")}></img> */}
             </div>
         </div>
 

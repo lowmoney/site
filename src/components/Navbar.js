@@ -1,7 +1,7 @@
 import React , { Component } from "react"
 import "../components/navbar.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAlignJustify } from '@fortawesome/free-solid-svg-icons'
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//import { faAlignJustify } from '@fortawesome/free-solid-svg-icons'
 import milestones from "../pages/mielstones";
 
 class Navbar extends Component {
@@ -18,7 +18,7 @@ class Navbar extends Component {
         return (
             
             <div className="topnav">
-                <FontAwesomeIcon icon={faAlignJustify} onClick={this.myFunction} id="icon"/>
+                {/* <FontAwesomeIcon icon={faAlignJustify} onClick={this.myFunction} id="icon"/> */}
                 <div id="myLinks">
                     <a>home</a>
                     <a>GameDay</a>
