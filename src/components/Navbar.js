@@ -2,15 +2,17 @@ import React , { Component } from "react"
 import "../components/navbar.css"
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //import { faAlignJustify } from '@fortawesome/free-solid-svg-icons'
-import milestones from "../pages/mielstones";
 
 class Navbar extends Component {
     myFunction () {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-            x.style.display = "none"
+        var bod = document.getElementById("bodyWrapper");
+        var cover = document.getElementById("navLinkCover");
+        if (bod.style.animationName === "none") {
+            bod.style.animationName = "expand";
+            cover.style.animationName = "expand";
         } else {
-            x.style.display = "block";
+            bod.style.animationName = "none";
+            cover.style.animationName = "none";
         }
     }
 
@@ -19,11 +21,7 @@ class Navbar extends Component {
             
             <div className="topnav">
                 {/* <FontAwesomeIcon icon={faAlignJustify} onClick={this.myFunction} id="icon"/> */}
-                <div id="myLinks">
-                    <a>home</a>
-                    <a>GameDay</a>
-                    <a>Milestones</a>
-                </div>
+                <button className="icon" onClick={this.myFunction}>click me</button>
             </div>
         )
     }

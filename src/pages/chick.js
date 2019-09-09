@@ -10,14 +10,26 @@ const landingpage = () => (
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>  
         </head>
 
+
+        <div id="navbar">
+
+            <Navbar></Navbar>
+    
+
+            <div id="navLinks">
+                    <p>home</p>
+                    <p>about</p>
+            </div>
+        </div>
+        
+
         <div id="bodyWrapper">
+
+            <div id="navLinkCover"></div>
+
 
             <div id="chickfilalogo">
                 <img id="image" src={require("../images/chickfilalogo.png")}></img>
-            </div>
-
-            <div id="navbar">
-                <Navbar></Navbar>
             </div>
 
             <div id="bannerImg">
@@ -50,7 +62,9 @@ const landingpage = () => (
                 <p><a>(614) 424-6020</a> <a>chick-fil-a.com</a></p>
             </div>
 
+
         </div>
+
     </div>
 )
 
