@@ -10,6 +10,9 @@ const landingpage = () => (
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>  
         </head>
 
+        
+
+        <div id="bodyWrapper">
 
         <div id="navbar">
 
@@ -21,24 +24,23 @@ const landingpage = () => (
                     <p>about</p>
             </div>
         </div>
-        
-
-        <div id="bodyWrapper">
-
-            <div id="navLinkCover"></div>
 
 
-            <div id="chickfilalogo">
+<div id="mainBod">
+            <div className="navBod" id="navLinkCover"></div>
+
+
+            <div className="navBod" id="chickfilalogo">
                 <img id="image" src={require("../images/chickfilalogo.png")}></img>
             </div>
 
-            <div id="bannerImg">
+            <div className="navBod" id="bannerImg">
 
             <img id="image" src={require("../images/uni.jpg")}></img>
 
             </div>
 
-            <div id="strategy">
+            <div className="navBod" id="strategy">
                 <p id="startPar">At the Heart of Ohio</p>
                 <ul id="stratList">
                     <li>University Involvement</li>
@@ -47,7 +49,7 @@ const landingpage = () => (
                 </ul>
             </div>
 
-            <div id="mileStones">
+            <div className="navBod" id="mileStones">
                 <p>Milestones</p>
                 <ul id="milStonesList">
                     <li>Opened Our Doors at</li>
@@ -56,12 +58,12 @@ const landingpage = () => (
                 </ul>
             </div>
             
-            <div id="footer">
+            <div className="navBod" id="footer">
                 <p>The OSU Chick-fil-A</p>
                 <p><a>1924 N High ST, Columbus, OH 43201</a></p>
                 <p><a>(614) 424-6020</a> <a>chick-fil-a.com</a></p>
             </div>
-
+</div>
 
         </div>
 

@@ -3,7 +3,7 @@
     100% {left: 0px; top: 100px;}
 }
 
-#bodyWrapper {
+#mainBod {
     animation-name: none;
     animation-duration: 1s;
     position: relative;
@@ -14,3 +14,4 @@
     z-index: -1;
     grid-row: 1;
 }
+

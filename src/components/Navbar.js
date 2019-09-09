@@ -5,7 +5,7 @@ import "../components/navbar.css"
 
 class Navbar extends Component {
     myFunction () {
-        var bod = document.getElementById("bodyWrapper");
+        var bod = document.getElementById("navBod");
         var cover = document.getElementById("navLinkCover");
         if (bod.style.animationName === "none") {
             bod.style.animationName = "expand";
