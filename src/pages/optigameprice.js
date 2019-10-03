@@ -32,13 +32,13 @@ class Page extends Component {
                     
                     <h1 className="uk-text-light uk-heading-small">OptiGamePrice</h1>
                     <p className="uk-text-break">
-                    OptiGamePrice is a site made for people who want to
-                    find the lowest price for a game without the hassel 
-                    of searching different sites. You can either visit the redirect url
-                    and that`ll take you to the online shop for the game for the lowest price
-                    or you can send a SMS message with the game name to <a href="sms:+18332759949">+1(833) 275-9949</a> and
-                    you`ll recive a tinyurl to the shop with the lowest price.
-                    No searching required!
+                        OptiGamePrice is a site made for people who want to
+                        find the lowest price for a game without the hassle 
+                        of searching different sites. You can either visit the redirect URL
+                        and that`ll take you to the online shop for the game for the lowest price
+                        or you can send a SMS message with the game name to <a href="sms:+18332759949">+1(833) 275-9949</a> and
+                        you`ll receive a tinyurl to the shop with the lowest price.
+                        No searching required!
                     </p>
 
                 </div>
@@ -84,7 +84,7 @@ class Page extends Component {
                     <h1 className="uk-text-light uk-card-title">
                         You can also build your own link that, when visited, will redirect
                         the visitor to the shop with the lowest price for the game.
-                        Great if your on Youtube and have done a review on a game!
+                        Great if you’re on YouTuber and have done a review on a game!
                     </h1>
                     <p className="uk-text-break">
                         To build the link simply copy over the link: http://www.optigameprice.com/game/game+name.
@@ -100,7 +100,6 @@ class Page extends Component {
                     <div className="uk-margin">
                         <form onChange={this.linkBuilder} className="uk-search uk-search-default">
                             <input id="userInput" className="uk-search-input" type="search" placeholder="Enter game name..."/> 
-                            <button className="uk-button uk-button-primary uk-button-small">Make Link</button>
                         </form>
                     </div>
 
@@ -129,10 +128,10 @@ class Page extends Component {
 
                     <p className="uk-text-break">
                         I`m working on having the ability for users to get data from the database.
-                        When you send a request to /search and a game name to the SMS number and link for the redirection url
-                        the game name is added to the database and the ammount of times the game has been searched (hits) 
-                        is increased by one and added to the database. As of now you can theortically get the whole database
-                        as an array of json objects or get the ammount of searchs (hits) of a particular game.
+                        When you send a request to /search and a game name to the SMS number and link for the redirection URL
+                        the game name is added to the database and the amount of times the game has been searched (hits) 
+                        is increased by one and added to the database. As of now you can theoretically get the whole database
+                        as an array of json objects or get the number of searches (hits) of a particular game.
                     </p>
                         
                     <p className="uk-text-break">
@@ -186,7 +185,7 @@ class Page extends Component {
                         </Highlight>
 
                         <p>
-                            So far the in my testing you can get the hits of a particular game 
+                            So far, the in my testing you can get the hits of a particular game 
                             but the "get all" link does not work at the moment.
                         </p>
 
