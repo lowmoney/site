@@ -31,7 +31,7 @@ class Page extends Component {
                 <div className="uk-card-header uk-grid-small uk-card uk-card-default uk-card-body">
                     
                     <h1 className="uk-text-light uk-heading-small">OptiGamePrice</h1>
-                    <p>
+                    <p className="uk-text-break">
                     OptiGamePrice is a site made for people who want to
                     find the lowest price for a game without the hassel 
                     of searching different sites. You can either visit the redirect url
@@ -104,7 +104,7 @@ class Page extends Component {
                         </form>
                     </div>
 
-                    <p id="userLink">
+                    <p className="uk-text-break" id="userLink">
 
                     </p>
 
