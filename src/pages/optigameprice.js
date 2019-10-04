@@ -15,6 +15,8 @@ class Page extends Component {
         output.innerHTML = ("http://www.optigameprice.com/game/"+user_input.replace(' ','+'))
     }
 
+
+
     render() {
         return(
             <div>
@@ -47,7 +49,7 @@ class Page extends Component {
                 <h1 className="uk-heading-line uk-text-center">The Features</h1>
 
                 <div className="uk-card-header uk-grid-small uk-card uk-card-default uk-card-body">
-                        <h1 className="uk-text-light uk-card-title">Sending an API request with a json payload that returns a json object</h1>
+                        <h1 className="uk-text-light uk-card-title">Sending a GET request with a json payload that returns a json object</h1>
                         <p>In these examples we will use the requests library in Python to send the request</p>
                     
                         <p>The API call is <a>http://www.optigameprice.com/search</a></p>
@@ -134,9 +136,9 @@ class Page extends Component {
                     </p>
                         
                     <p className="uk-text-break">
-                        To get this data simply add /hits/all or /hits/game_name to the end of the main url
-                        You can simply add the link to your webbrowser but I`ve added an example using Python 
-                        requests to show how this can be done as well as the response you`ll get.
+                        To get this data simply add /hits/all or /hits/game_name to the end of the main url with a GET request.
+                        You can simply add the link to your webbrowser but I`ve added an example using the Python 
+                        requests library to show how this can be done as well as the response you`ll get.
                         
                         <Highlight language="python">
                             <p>import requests</p>
@@ -188,6 +190,12 @@ class Page extends Component {
                             </p>
 
                         </Highlight>
+                    </p>
+
+                    <p className="uk-text-break">
+                        Two more API calls exist that return the most searched game and the top three searched game.
+                        Send a GET request to /mostpop or /topthree to get the most searched and the top three searched.
+                        Again you`ll receive JSON object. 
                     </p>
                 </div>
                 <br/>
