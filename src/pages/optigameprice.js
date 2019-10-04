@@ -123,19 +123,21 @@ class Page extends Component {
 
                 <div className="uk-card-header uk-grid-small uk-card uk-card-default uk-card-body">
                     <h1 className="uk-text-light uk-card-title">
-                        Developing Features
+                        Accessing The Data
                     </h1>
 
                     <p className="uk-text-break">
-                        I`m working on having the ability for users to get data from the database.
-                        When you send a request to /search and a game name to the SMS number and link for the redirection URL
+                        When you send a request to /search, to the SMS number, or link for the redirection URL
                         the game name is added to the database and the amount of times the game has been searched (hits) 
-                        is increased by one and added to the database. As of now you can theoretically get the whole database
-                        as an array of json objects or get the number of searches (hits) of a particular game.
+                        is increased by one and added to the database. You can see how many times people have searched for
+                        a particular game or see how many times people have searched for all games returned as JSON.
                     </p>
                         
                     <p className="uk-text-break">
-                        If you wish to try them out simply add /hits/all or /hits/game_name to the end of the url
+                        To get this data simply add /hits/all or /hits/game_name to the end of the main url
+                        You can simply add the link to your webbrowser but I`ve added an example using Python 
+                        requests to show how this can be done as well as the response you`ll get.
+                        
                         <Highlight language="python">
                             <p>import requests</p>
 
@@ -146,23 +148,26 @@ class Page extends Component {
                             <p>r.json()</p>
                             
                             <p>
-                                [
-                                    {"{"}
-                                    "game_name" : "game_name",
-                                    "hits" : "20"
-                                    {"}"},
-                                            
-                                    {"{"}
-                                    "game_name" : "game_name",
-                                    "hits" : "10"
-                                    {"}"},
+                                {"{"}
 
-                                    {"{"}
-                                    "game_name" : "game_name",
-                                    "hits" : "30"
-                                    {"}"}
+                                    "games": [
+                                        {"{"}
+                                        "game_name" : "game_one",
+                                        "hits" : "20"
+                                        {"}"},
+                                                
+                                        {"{"}
+                                        "game_name" : "game_two",
+                                        "hits" : "10"
+                                        {"}"},
 
-                                ]
+                                        {"{"}
+                                        "game_name" : "game_three",
+                                        "hits" : "30"
+                                        {"}"}
+                                    ]
+
+                                {"}"}
                             </p>
                         </Highlight>
 
@@ -183,12 +188,6 @@ class Page extends Component {
                             </p>
 
                         </Highlight>
-
-                        <p>
-                            So far, the in my testing you can get the hits of a particular game 
-                            but the "get all" link does not work at the moment.
-                        </p>
-
                     </p>
                 </div>
                 <br/>
